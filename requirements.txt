@@ -1,1 +1,0 @@
-../lessons_teach_me/requirements_1.txt
