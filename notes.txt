@@ -1,0 +1,19 @@
+1. .gitignore: 
+		All file names need to add to .gitinore file before commit them. 
+		Otherwise they will be appear in public repository in GitHub
+
+2. SSH: 
+	issue: 
+		Every time when i try to perform "push" command remote server asks my credentials. 
+		But SSH-key already exist.
+
+	solution:
+		Modified GIT configuration file. Changed SSH connection string in ~/.git/config 
+				
+				from 
+
+		url = https://github.com/path/to/repository  
+			
+				to
+
+		url = ssh://git@github.com/path/to/repository 
