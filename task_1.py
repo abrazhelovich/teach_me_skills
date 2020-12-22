@@ -7,8 +7,8 @@ summa = a + b
 difference = b - a
 multipl = a * b
 
-print("a = 7")
-print("b = 9")
+print("a: " + str(a))
+print("b: " + str(b))
 print("\nSumm: " + str(summa))
 print("Difference: " + str(difference))
 print("Multiplication: " + str(multipl))
