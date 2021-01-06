@@ -10,15 +10,12 @@ fib2 = 1
 
 list_fib = [1, 1]
 
-n = input("Номер элемента ряда Фибоначчи: ")
-n = int(n)
+element = int(input("Номер элемента ряда Фибоначчи: "))
 
-i = 0
-while i < n - 2:
+for n in range(element-2):
     fib_sum = fib1 + fib2
     fib1 = fib2
     fib2 = fib_sum
     list_fib.append(fib2)
-    i = i + 1
 
 print(list_fib)
