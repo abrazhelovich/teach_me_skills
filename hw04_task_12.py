@@ -7,11 +7,11 @@
 старый удаляется)'''
 
 dict = {'test': 'test_value', 'europe': 'eur', 'dollar': 'usd', 'ruble': 'rub'}
-count = list(dict.keys())
 
-i = 0
-while i < len(count):
-    dict[count[i] + str(len(count[i]))] = dict.pop(count[i])
-    i += 1
+keys = list(dict.keys())
+
+for key in keys:
+    new_key = f'{key}{len(key)}'
+    dict[new_key] = dict.pop(key)
 
 print(dict)
