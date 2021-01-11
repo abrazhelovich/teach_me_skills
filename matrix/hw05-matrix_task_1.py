@@ -39,3 +39,10 @@ for i in range(n):
         if matrix[i][j] > a:
             a = matrix[i][j]
 print("Max element =", a)
+
+a = matrix[0][0]  # Min element
+for i in range(n):
+    for j in range(m):
+        if matrix[i][j] < a:
+            a = matrix[i][j]
+print("Min element =", a)
