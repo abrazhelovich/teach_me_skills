@@ -46,3 +46,9 @@ for i in range(n):
         if matrix[i][j] < a:
             a = matrix[i][j]
 print("Min element =", a)
+
+sum = 0  # Summa
+for i in range(n):
+    for j in range(m):
+        sum += matrix[i][j]
+print("Summa =", sum)
