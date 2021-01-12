@@ -28,9 +28,7 @@ for i in range(n):
 
 print()
 for row in matrix:
-    for elem in row:
-        print(elem, end=' ')
-    print()
+    print(row)
 print()
 
 a = matrix[0][0]  # Max element
@@ -47,8 +45,34 @@ for i in range(n):
             a = matrix[i][j]
 print("Min element =", a)
 
-sum = 0  # Summa
+suma = 0  # Summa
 for i in range(n):
     for j in range(m):
-        sum += matrix[i][j]
-print("Summa =", sum)
+        suma += matrix[i][j]
+print("Summa =", suma)
+
+#numbers = matrix[0]
+#print(numbers)
+
+numsum = sum(matrix[0])
+inx = 0
+#s = 0   # Index of max line
+for i, row in enumerate(matrix):
+    print(i)
+    if sum(matrix[i]) > numsum:
+        numsum = sum(matrix[i])
+        print('numsum=', numsum)
+        inx = i
+        print('i=', i)
+rep = str(row).replace(', ', '+')
+print(inx, rep)
+#print(inx, row)
+    # s = 0
+    # for j in range(m):
+    #     if
+    #     s += matrix[i][j]
+    #
+    # print(i, s)
+
+        #sum += matrix[i][j]
+#print("Summa =", sum)
