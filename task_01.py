@@ -15,53 +15,44 @@
 # 1.11.Пинты в литры
 # 1.12.Литры в пинты
 
-def inchToSant(inch):
-    convert = inch * 2.54
-    return convert
+def print_res(res: float) -> float:
+    print(res, end='\n\n')
 
-def santToInch(sant):
-    convert = sant / 2.54
-    return convert
+def inchToSant(inch: float, div: float = 2.54) -> float:
+    return inch * div
 
-def milToKm(mil):
-    convert = mil * 1.609344
-    return convert
+def santToInch(sant: float, div: float = 2.54) -> float:
+    return sant / div
 
-def kmToMil(km):
-    convert = km / 1.609344
-    return convert
+def milToKm(mil: float, div: float = 1.609344) -> float:
+    return mil * div
 
-def funtToKg(funt):
-    convert = funt * 0.4535923745
-    return convert
+def kmToMil(km: float, div: float = 1.609344) -> float:
+    return km / div
 
-def kgToFunt(kg):
-    convert = kg / 0.4535923745
-    return convert
+def funtToKg(funt: float, div: float = 0.4535923745) -> float:
+    return funt * div
 
-def uncToGr(unc):
-    convert = unc * 28.349523125
-    return convert
+def kgToFunt(kg: float, div: float = 0.4535923745) -> float:
+    return kg / div
 
-def grToUnc(gr):
-    convert = gr / 28.349523125
-    return convert
+def uncToGr(unc: float, div: float = 28.349523125) -> float:
+    return unc * div
 
-def galToLitr(gal):
-    convert = gal * 3.78541
-    return convert
+def grToUnc(gr: float, div: float = 28.349523125) -> float:
+    return gr / div
 
-def litrToGal(litr):
-    convert = litr / 3.78541
-    return convert
+def galToLitr(gal: float, div: float = 3.78541) -> float:
+    return gal * div
 
-def pintaToLitr(pinta):
-    convert = pinta * 0.56826240812
-    return convert
+def litrToGal(litr: float, div: float = 3.78541) -> float:
+    return litr / div
 
-def litrToPinta(litr):
-    convert = litr / 0.56826240812
-    return convert
+def pintaToLitr(pinta: float, div: float = 0.56826240812) -> float:
+    return pinta * div
+
+def litrToPinta(litr: float, div: float = 0.56826240812) -> float:
+    return litr / div
 
 def main():
     while True:
@@ -86,76 +77,41 @@ def main():
 
         text = float(input('Введите численное значение: '))
         if val == 1:
-            digit = text
-            result = inchToSant(digit)
-            print(result)
-            print()
-
+            result = inchToSant(text)
+            pr_result = print_res(result)
         elif val == 2:
-            digit = text
-            result = santToInch(digit)
-            print(result)
-            print()
-
+            result = santToInch(text)
+            pr_result = print_res(result)
         elif val == 3:
-            digit = text
-            result = milToKm(digit)
-            print(result)
-            print()
-
+            result = milToKm(text)
+            pr_result = print_res(result)
         elif val == 4:
-            digit = text
-            result = kmToMil(digit)
-            print(result)
-            print()
-
+            result = kmToMil(text)
+            pr_result = print_res(result)
         elif val == 5:
-            digit = text
-            result = funtToKg(digit)
-            print(result)
-            print()
-
+            result = funtToKg(text)
+            pr_result = print_res(result)
         elif val == 6:
-            digit = text
-            result = kgToFunt(digit)
-            print(result)
-            print()
-
+            result = kgToFunt(text)
+            pr_result = print_res(result)
         elif val == 7:
-            digit = text
-            result = uncToGr(digit)
-            print(result)
-            print()
-
+            result = uncToGr(text)
+            pr_result = print_res(result)
         elif val == 8:
-            digit = text
-            result = grToUnc(digit)
-            print(result)
-            print()
-
+            result = grToUnc(text)
+            pr_result = print_res(result)
         elif val == 9:
-            digit = text
-            result = galToLitr(digit)
-            print(result)
-            print()
-
+            result = galToLitr(text)
+            pr_result = print_res(result)
         elif val == 10:
-            digit = text
-            result = litrToGal(digit)
-            print(result)
-            print()
-
+            result = litrToGal(text)
+            pr_result = print_res(result)
         elif val == 11:
-            digit = text
-            result = pintaToLitr(digit)
-            print(result)
-            print()
-
+            result = pintaToLitr(text)
+            pr_result = print_res(result)
         elif val == 12:
-            digit = text
-            result = litrToPinta(digit)
-            print(result)
-            print()
+            result = litrToPinta(text)
+            pr_result = print_res(result)
 
 if __name__ == '__main__':
     main()
