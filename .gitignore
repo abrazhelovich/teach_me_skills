@@ -1,2 +1,7 @@
 requirements__2.txt
 blank_file__1.txt
+main_test.py
+images
+.idea/
+__pycache__/
+venv/
