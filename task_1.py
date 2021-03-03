@@ -33,23 +33,23 @@
 # запрашиваемая страница - обратите внимание на
 # статус вашего запроса.
 
-from modules.get_image import get_image
 from modules.img_types import img_form
 from modules.is_folder_exist import check_folder
+from modules.check_params import check_params
 import argparse
 
 
 def main():
     local_folder = 'images'
     check_folder(local_folder)
-    avail_img_format = img_form()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-url', '--url', required=True)
+    parser.add_argument('-url', '--url', required=False)
     parser.add_argument('-mode', '--mode', required=False)
+    parser.add_argument('-lst_urls', '--lst_urls', required=False)
     args = parser.parse_args()
 
-    get_image(args.url, args.mode, avail_img_format, local_folder)
+    check_params(args.url, args.lst_urls, args.mode)
 
 
 if __name__ == '__main__':
