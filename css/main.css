@@ -1,0 +1,54 @@
+/*.flex {*/
+/*    display: flex;*/
+/*}*/
+
+.grid {
+    display: grid;
+}
+
+.menu {
+    /*width: 25%;*/
+    background: brown;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*order: 3;*/
+}
+
+/*.content {*/
+/*    width: 50%;*/
+/*    background: green;*/
+/*    !*order: 1;*!*/
+/*}*/
+
+/*.recomend {*/
+/*    width: 25%;*/
+/*    background: red;*/
+/*    !*order: 2;*!*/
+/*}*/
+
+.menu > a {
+    display: block;
+}
+/*p {*/
+/*    color: blueviolet;*/
+/*    margin: 30px;*/
+/*    margin-right: 60px;*/
+/*}*/
+
+/*.red {*/
+/*    color: chartreuse;*/
+/*}*/
+
+/*h1 {*/
+/*    color: red;*/
+/*    font-size: 70px;*/
+/*}*/
+/*div.red> h3 {*/
+/*    color: green;*/
+/*}*/
+
+/*h1+h3 {*/
+/*    color: blue;*/
+/*}*/

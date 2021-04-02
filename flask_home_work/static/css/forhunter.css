@@ -1,0 +1,88 @@
+.container {
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.flex {
+    display: flex;
+}
+
+.p_content {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    color: #605f5f;
+    font: bold 30px/30px Arial;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    /*position: relative;*/
+}
+
+.left {
+    /*float: left;*/
+    width: 25%;
+    border: 1px solid black;
+}
+
+.content {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.menu {
+    margin-bottom: 70px;
+}
+
+nav {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block; /*один из способов разместить элементы в строку*/
+    color: #0000FF;
+    padding: 10px;
+}
+
+li.red {
+    color: #FF0000;
+    text-decoration: underline #FF0000;
+}
+
+.top {
+    color: black;
+    font-weight: 700;
+}
+
+.image {
+    float: left;
+    width: 200px;
+    height: 133px;
+}
+
+.center {
+    font: caption;
+    text-align: center;
+    padding-top: 17%;
+    color: black;
+    font-weight: 700;
+    border: 1px solid black;
+    /*width: 200px;*/
+    /*height: 133px;*/
+}
+
+.title {
+    color: black;
+    font: bold 30px/30px Arial;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}

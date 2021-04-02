@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My working page</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/forhunter.css">
+</head>
+<body>
+        <div>
+            <div class="flex">
+                <div class="left">
+                    <div class="title">Users list:</div>
+                    {% if l_users %}
+                        {% for user in l_users %}
+                            <p><a href="/users/{{ user }}">{{ user }}</a></p>
+                        {% endfor %}
+                    {% else %}
+                        <p>No users</p>
+                    {% endif %}
+                </div>
+            <div class="content">
+                <h1 class="top">About this page</h1>
+                <p class="p_content">
+                   The page was created for testing goals.
+                </p>
+            </div>
+            <div class="left">
+                <a href="https://www.gismeteo.by/"><img src="https://wersm.com/wp-content/uploads/2013/07/users.jpg"></a>
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>
